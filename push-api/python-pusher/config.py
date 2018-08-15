@@ -5,3 +5,9 @@ class COVEO_CLOUD_ORG():
 
 class SCRAPER():
     FOLDER = "/MyDocuments/JSON"
+
+class IMPORTER():
+   DOWNLOAD_FILE = True
+   IMPORT_URL = "myURL"
+   FILE_NAME = "package"
+   DICTIONARY_FILE_NAME = "dictionary"

@@ -2,12 +2,16 @@ import pusher
 import scraper
 import parameters
 import time
+import importer
+import splitter
 
 MESSAGES = parameters.MESSAGES()
 SOURCE_STATUS = parameters.SOURCE_STATUS()
 
 if __name__ == "__main__":
-    # Run the batch
+    #Run the batch
+    importer.Importer().importFile()
+    splitter.Splitter().splitFile()
     status = pusher.Status()
     scraper = scraper.Scraper()
     start_time = time.time()

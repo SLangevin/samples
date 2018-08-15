@@ -1,7 +1,7 @@
 class SCRAPER_PARAM():
     FILE_TYPE = ".json"
     ENCODING = "UTF-8"
-    UNIQUE_DOCUMENT_ID_NODE = "DocumentId"
+    UNIQUE_DOCUMENT_ID_NODE = "documentId"
 
 class PUSH_API_PARAM():
     PUSH_API_URL = "push.cloud.coveo.com"
@@ -15,6 +15,17 @@ class PUSH_API_PARAM():
     HEADER_AUTHORIZATION = "Authorization"
     REQUEST_TYPE_POST = "POST"
     REQUEST_TYPE_PUT =  "PUT"
+
+class IMPORTER():
+    FILE_TYPE = ".json"
+    URL_OPEN_MODE = "wb"
+    FILE_OPEN_MODE = "w"
+
+class SPLITTER():
+    FILE_SEPARATOR = "_"
+    FILE_TYPE = ".json"
+    ENCODING = "UTF-8"
+    FILE_OPEN_MODE = "w"
 
 class SOURCE_STATUS():
     REBUILD = "REBUILD"
